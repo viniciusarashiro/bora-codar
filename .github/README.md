@@ -66,8 +66,8 @@
         </tr>
         <tr>
             <td><strong>13</strong></td>
-            <td><a href="#"><strong>Forms de Cartão de Crédito</strong></a></td>
-            <td align="center" ><a href="#"><img width="250px" src="./preview/13.png" /></a></td>
+            <td><a href="https://github.com/viniciusarashiro/bora-codar/tree/main/13"><strong>Forms de Cartão de Crédito</strong></a></td>
+            <td align="center" ><a href="https://github.com/viniciusarashiro/bora-codar/tree/main/13"><img width="250px" src="./preview/13.png" /></a></td>
         </tr>
     </tbody>
 </table></p>
