@@ -15,12 +15,88 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+/* Utility */
+.primary-button {
+  background: #996dff;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 1.6rem 2.4rem;
+  margin-top: 3.2rem;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.primary-button:hover {
+  background: #7c3aed;
+}
+
+.secondary-button {
+  border: 0.1rem solid #1e293b;
+  border-radius: 0.4rem;
+  color: #1e293b;
+  padding: 1.6rem 2.4rem;
+  margin-top: 3.2rem;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.secondary-button:hover {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-price span {
+  font-weight: 400;
+}
+
+.card-price p {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Main */
+
 .container {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Cards */
+
+.card-benefits li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding-top: 1.6rem;
+}
+
+.card-benefits::before {
+  content: "";
+  display: block;
+  width: 32rem;
+  height: 0px;
+  border: 1px solid #e2e8f0;
+  margin: 3.2rem 0;
+}
+
+.card-benefits li img {
+  margin-right: 0.8rem;
 }
 
 .cards-group {
@@ -31,7 +107,6 @@ body {
 }
 
 /* Essentials */
-
 .card-essentials {
   width: 38.4rem;
   height: 45.4rem;
@@ -54,20 +129,8 @@ body {
   flex-direction: column;
 }
 
-.essentials-price {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.essentials-price span {
-  font-weight: 400;
-}
-
-.essentials-price p {
-  font-size: 1.8rem;
+.essentials-content .card-price p {
   color: #1e293b;
-  font-weight: 700;
 }
 
 .essentials-content > span {
@@ -86,47 +149,9 @@ body {
   color: #1e293b;
 }
 
-.essentials-content a {
-  border: 0.1rem solid #1e293b;
-  border-radius: 0.4rem;
-  color: #1e293b;
-  padding: 1.6rem 2.4rem;
-  margin-top: 3.2rem;
-  text-align: center;
-  transition: 0.2s;
-}
-
-.essentials-content a:hover {
-  background: #1e293b;
-  color: #ffffff;
-}
-
-.essentials-benefits {
+.essentials-content .card-benefits,
+.enterprise-content .card-benefits {
   color: #475569;
-  list-style: none;
-}
-
-.essentials-benefits li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  padding-top: 1.6rem;
-}
-
-.essentials-benefits::before {
-  content: "";
-  display: block;
-  width: 32rem;
-  height: 0px;
-  border: 1px solid #e2e8f0;
-  margin: 3.2rem 0;
-}
-
-.essentials-benefits li img {
-  margin-right: 0.8rem;
 }
 
 /* Ultimate */
@@ -134,10 +159,8 @@ body {
 .card-ultimate {
   width: 38.4rem;
   height: 45.4rem;
-  border: 1px solid blue;
   background: #0f172a;
   padding: 4.8rem 3.2rem 3.2rem 3.2rem;
-
   border-radius: 1rem;
   position: relative;
 }
@@ -147,21 +170,6 @@ body {
   height: 37.4rem;
   display: flex;
   flex-direction: column;
-}
-
-.ultimate-price {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.ultimate-price span {
-  font-weight: 400;
-}
-
-.ultimate-price p {
-  font-size: 1.8rem;
-  font-weight: 700;
 }
 
 .ultimate-content > span {
@@ -180,52 +188,17 @@ body {
   color: #f8fafc;
 }
 
-.ultimate-content p {
+.ultimate-content .card-price p {
   color: #f8fafc;
 }
 
-.ultimate-content a {
-  background: #996dff;
-  border-radius: 4px;
-  color: #ffffff;
-  padding: 1.6rem 2.4rem;
-  margin-top: 3.2rem;
-  text-align: center;
-  transition: 0.2s;
-}
-
-.ultimate-content a:hover {
-  background: #7c3aed;
-}
-
-.ultimate-benefits::before {
-  content: "";
-  display: block;
-  width: 32rem;
-  height: 0px;
-  border: 1px solid #334155;
-  margin: 3.2rem 0;
-}
-
-.ultimate-benefits {
+.ultimate-content .card-benefits {
   color: #cbd5e1;
-  list-style: none;
 }
 
-.ultimate-benefits li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  padding-top: 1.6rem;
+.ultimate-content .card-benefits::before {
+  border: 1px solid #334155;
 }
-
-.ultimate-benefits li img {
-  margin-right: 0.8rem;
-}
-
 /* Enterprise */
 
 .card-enterprise {
@@ -266,49 +239,6 @@ body {
   color: #1e293b;
 }
 
-.enterprise-content a {
-  border: 0.1rem solid #1e293b;
-  border-radius: 0.4rem;
-  color: #1e293b;
-  padding: 1.6rem 2.4rem;
-  margin-top: 3.2rem;
-  text-align: center;
-  transition: 0.2s;
-}
-
-.enterprise-content a:hover {
-  background: #1e293b;
-  color: #ffffff;
-}
-
-.enterprise-benefits {
-  color: #475569;
-  list-style: none;
-}
-
-.enterprise-benefits li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  padding-top: 1.6rem;
-}
-
-.enterprise-benefits li img {
-  margin-right: 0.8rem;
-}
-
-.enterprise-benefits::before {
-  content: "";
-  display: block;
-  width: 32rem;
-  height: 0px;
-  border: 1px solid #e2e8f0;
-  margin: 3.2rem 0;
-}
-
 .card-ultimate::before {
   position: absolute;
   content: "Mais vantajoso";
@@ -322,7 +252,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.8rem 1.6rem;
 }
+
+/* Responsive */
 
 @media (max-width: 1200px) {
   .cards-group {
@@ -331,7 +266,7 @@ body {
     align-items: center;
     gap: 2.4rem;
   }
-  .ultimate-benefits::before {
-    margin: 1.6em 0;
+  .card-benefits::before {
+    margin: 1.6rem 0;
   }
 }
