@@ -69,5 +69,10 @@
             <td><a href="https://github.com/viniciusarashiro/bora-codar/tree/main/13"><strong>Forms de Cartão de Crédito</strong></a></td>
             <td align="center" ><a href="https://github.com/viniciusarashiro/bora-codar/tree/main/13"><img width="250px" src="./preview/13.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>15</strong></td>
+            <td><a href="https://github.com/viniciusarashiro/bora-codar/tree/main/15"><strong>Pricing table</strong></a></td>
+            <td align="center" ><a href="https://github.com/viniciusarashiro/bora-codar/tree/main/15"><img width="250px" src="./preview/15.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
