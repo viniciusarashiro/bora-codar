@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+input {
+  font-family: "Roboto";
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1a1924;
+  font-size: 1.6rem;
+  color: #e1e1e6;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background: #16151e;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  padding: 4rem;
+}
+
+.itens-center {
+  align-items: center;
+}
+
+header h2 {
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+nav ul {
+  gap: 1.6rem;
+}
+
+form {
+  margin-top: 2.4rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.input-wrapper {
+  gap: 1rem;
+  background: #24243d;
+  border-radius: 0.5rem;
+  padding: 1.6rem 2.4rem;
+}
+
+.input-wrapper input {
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  outline: 0;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #e1e1e6;
+}
+
+.input-wrapper ion-icon {
+  font-size: 1.6rem;
+}
+
+.input-wrapper input::placeholder {
+  color: #e1e1e6;
+}
+
+.input-wrapper:focus-within {
+  outline: 0.2rem white solid;
+}
