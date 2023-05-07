@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-color: #ece4ef;
+  --secondary-color: #d8cede;
+}
+
+body {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Source Sans Pro";
+  background: #0b0322;
+}
+
+.card {
+  height: 60.8rem;
+  width: 43.6rem;
+  background: url("./assets/background.png");
+  position: relative;
+}
+
+header {
+  padding-top: 4.8rem;
+  padding-left: 4rem;
+  padding-right: 13.3rem;
+  padding-bottom: 6rem;
+}
+
+header h1 {
+  padding-bottom: 1.6rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-shadow: 0rem 0rem 0.8rem rgba(255, 255, 255, 0.4);
+}
+
+header p {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 130%;
+}
+
+main {
+  padding-left: 4rem;
+  padding-bottom: 8.2rem;
+  padding-right: 19.8rem;
+}
+
+dt {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #9c83a7;
+  padding-bottom: 0.2rem;
+}
+
+dd {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 130%;
+  color: var(--secondary-color);
+  margin-bottom: 1.6rem;
+}
