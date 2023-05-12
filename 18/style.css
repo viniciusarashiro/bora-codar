@@ -25,9 +25,10 @@ body {
   height: 100vh;
 }
 
-.container {
+.container,
+.cards {
   display: flex;
-  gap: 3.2rem;
+  align-items: center;
 }
 
 .cards-back {
